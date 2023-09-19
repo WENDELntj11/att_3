@@ -8,7 +8,7 @@ def calcular_idade():
     print("6. Sair do programa")
 
     while True:
-        opcao = int(input("Escolha uma opção: "))
+        opcao = int(input('Escolha uma das opção: '))
         if opcao == 6:
             break
 
