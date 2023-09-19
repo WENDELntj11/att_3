@@ -1,5 +1,5 @@
 # Socilitar uma frase ao usuário
-frase = input("Digite sua frase: ")
+frase = input("Digite uma frase: ")
 
 # Dividir a frase em palavras
 palavras = frase.split()
