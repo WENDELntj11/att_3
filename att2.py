@@ -11,9 +11,9 @@ taxas_cambio = {
 }
 
 # Solicitar a moeda de origem, a moeda de destino e quantidade
-moeda_origem = input("Digite a moeda de origem (USD, EUR, BRL):").upper()
-moeda_destino = input("Digite a moeda de destino (USD, EUR, BRL):").upper()
-quantidade = float(input("Digite a quantidade para ser convertida: "))
+moeda_origem = input('Digite a moeda de origem (USD, EUR, BRL):').upper()
+moeda_destino = input('Digite a moeda de destino (USD, EUR, BRL):').upper()
+quantidade = float(input('Digite a quantidade para ser convertida: '))
 
 # Verificar se as moedas e a taxa de câmbio estão definadas
 if (moeda_origem, moeda_destino) in taxas_cambio:
