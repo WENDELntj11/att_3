@@ -14,6 +14,6 @@ while True:
         print(f"Parabéns! Você acertou o número {numero_aleatorio} em {tentativas} tentativas.")
         break
     elif tentativa < numero_aleatorio:
-        print("Errou você foi neymar! Tente um número maior.")
+        print("Errou voce! Tente um número maior.")
     else:
-        print("Errou você foi lula! Tente um número menor.")
+        print("Errou você! lula! Tente um número menor.")
