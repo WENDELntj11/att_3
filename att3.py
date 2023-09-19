@@ -18,12 +18,12 @@ def gerar_senha(Comprimento, letras, numeros, caracteres_especiais):
 
 # Solicitar as preferências do usuário
 comprimento = int(input("Digite o comprimento da senha:"))
-letras = input("Incluir letras na senha (sim/não): ").lower() == "sim"
-numeros = input("Incluir números na senha (sim/não): ").lower() == "sim"
+letras = input("Inseri letras na senha (sim/não): ").lower() == "sim"
+numeros = input("Inseri números na senha (sim/não): ").lower() == "sim"
 caracteres_especiais = input("Incluir caracteres especiais na senha (sim/não): ").lower() == "sim"
 
 # Gerar a senha
 senha_gerada = gerar_senha(comprimento, letras, numeros, caracteres_especiais)
 
 # Exibir a senha gerada 
-print(f'Senha gerada: ´{senha_gerada}')
+print(f'Senha gerada: "{senha_gerada}")
