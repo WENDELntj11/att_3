@@ -2,7 +2,7 @@ import random
 from datetime import datetime, timedelta
 
 def gerador_cartao():
-    bandeiras = ['Visa', 'Mastercard', 'American Express']
+    bandeiras = ['Visa', 'Mastercard', "American Express"]
     print("\n1: Visa. \n2: Mastercard. \n3: American Express.")
     while True:
         escolha = int(input(f"\nQual Bandeira de Cartão de Crédito? "))
@@ -36,7 +36,7 @@ def digito_verificador(numero):
     return str((10 - soma) % 10)
 
 def gerador_cvv(empresa):
-    comprimento = 4 if empresa == 'American Express' else 3
+    comprimento = 4 if empresa == "American Express" else 3
     return ''.join(random.choice('0123456789') for _ in range(comprimento))
 
 def gerador_data_validade():
