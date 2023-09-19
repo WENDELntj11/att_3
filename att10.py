@@ -1,13 +1,13 @@
 def carregar_agenda():
     try:
-        with open("agenda.json", "r") as arquivo:
+        with open('agenda.json', "r") as arquivo:
             agenda = json.load(arquivo)
     except FileNotFoundError:
         agenda = {}
     return agenda
 
 def salvar_agenda(agenda):
-    with open("agenda.json", "w") as arquivo:
+    with open('agenda.json', "w") as arquivo:
         json.dump(agenda, arquivo, indent=4)
 
 def adicionar_contato(agenda, nome, telefone):
@@ -38,10 +38,10 @@ def excluir_contato(agenda, nome):
         print(f"Contato '{nome}' não encontrado na agenda.")
 
 def menu():
-    print("Agenda como números telefonicos")
-    agenda = carregar_agenda()
+    print("Agenda com o números telefonicos")
+      agenda = carregar_agenda()
 
-    while True:
+     while True:
         print("\nOpções:")
         print("1. Adicionar Contato")
         print("2. Pesquisar Contato")
@@ -51,22 +51,22 @@ def menu():
 
         escolha = input("Escolha uma opção (1/2/3/4/5): ")
 
-        if escolha == "1":
+        if escolha == '1':
             nome = input("Digite o nome do contato: ")
             telefone = input("Digite o telefone do contato: ")
             adicionar_contato(agenda, nome, telefone)
-        elif escolha == "2":
+        elif escolha == '2':
             nome = input("Digite o nome do contato a ser pesquisado: ")
             pesquisar_contato(agenda, nome)
-        elif escolha == "3":
+        elif escolha == '3':
             nome = input("Digite o nome do contato a ser editado: ")
             novo_telefone = input("Digite o novo telefone: ")
             editar_contato(agenda, nome, novo_telefone)
-        elif escolha == "4":
+        elif escolha == '4':
             nome = input("Digite o nome do contato a ser excluído: ")
             excluir_contato(agenda, nome)
-        elif escolha == "5":
-            print("Saindo do aplicativo.")
+        elif escolha == '5':
+            print("Saida do aplicativo.")
             break
         else:
             print("Opção inválida. Por favor, escolha uma opção válida.")
