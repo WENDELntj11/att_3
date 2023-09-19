@@ -6,12 +6,12 @@ def converter_fahrenheit_para_celsius(fahrenheit, casas_decimais):
     celsius = (fahrenheit - 32) * 5/9
     return round(celsius, casas_decimais)
 
-print("Conversor de Temperatura")
-print("Opções:")
-print("1. Converter de Celsius para Fahrenheit")
-print("2. Converter de Fahrenheit para Celsisus")
+print('Conversor de Temperatura')
+print('Opções:')
+print('1. Converter de Celsius para Fahrenheit')
+print('2. Converter de Fahrenheit para Celsisus')
 
-opcao = input("Escolha uma opção (1/2): ")
+opcao = input("Escolha uma das opção (1/2): ")
 
 if opcao == "1":
     celsius = float(input ("Digite a temperatura em Celsisus: "))
