@@ -7,17 +7,17 @@ def analisar_string(string):
     palavras = len(string.split())
 
     # Itere através dos caracteres na string
-    for char in string:
-        if char.isupper():
+for char in string:
+    if char.isupper():
             maiusculas += 1
-        elif char.islower():
+         elif char.islower():
             minusculas += 1
-        elif char.isdigit():
+         elif char.isdigit():
             digitos += 1 
-        else:
+         else:
             especiais += 1 
             
-    return maiusculas, minusculas, digitos, especiais, palavras
+     return maiusculas, minusculas, digitos, especiais, palavras
 
 # Socilitar uma string ao usuário
 string = input("Digite uma string: ")
