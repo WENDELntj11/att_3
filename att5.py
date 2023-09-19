@@ -45,7 +45,7 @@ while True:
     if escolha == "1":
         exibir_tarefas(tarefas)
      elif escolha == "2":
-        descricao = input("Digite a descrição da tarefa: ")
+        descricao = input("Digite uma descrição da tarefa: ")
         adicionar_tarefa(tarefas, descricao)
         salvar_tarefas_arquivo(tarefas, nome_arquivo)
         print("Tarefa adicionada com sucesso.")
