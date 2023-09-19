@@ -7,7 +7,7 @@ def fatorial(n):
         return n * fatorial(n-1)
 
 try:
-    numero = int(input("Insira um número para calcular o fatorial: "))
+    numero = int(input("Insira algum número para calcular o fatorial: "))
     resultado = fatorial(numero)
     print("O fatorial de", numero, "é", resultado)
 except ValueError as e:
